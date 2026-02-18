@@ -1,7 +1,15 @@
-let mCurrentIndex = 0 // Tracks the current image index
-let mImages = [] // Array to hold GalleryImage objects
-const mUrl = 'https://your-json-url.com' // Replace with actual JSON URL
-const mWaitTime = 5000 // Timer interval in milliseconds
+let mCurrentIndex = 0 // done
+let mImages = [] // done
+const mUrl = 'myImages.json' // done
+const mWaitTime = 5000 // unchanged
+
+$(document).ready(function() {
+  $.getJSON(mUrl, function(data) {
+    myImages = data;
+
+    showPrevPhoto(currentIndex);
+  })
+})
 
 $(document).ready(() => {
   $('.details').hide() // Hide details initially
