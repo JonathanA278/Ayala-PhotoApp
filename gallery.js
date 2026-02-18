@@ -1,5 +1,5 @@
 let mCurrentIndex = 0 // done
-let mImages = [] // done
+let mImages = [] // done 
 const mUrl = 'myImages.json' // done
 const mWaitTime = 5000 // unchanged
 
