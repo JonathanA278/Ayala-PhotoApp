@@ -1,0 +1,64 @@
+{
+    "images": [
+        {
+            "imgPath": "img/myImages/1-IMG_0948",
+            "imgLocation": "New Brunswick, New Jersey",
+            "description": "Rutgers University Blackout Game",
+            "date": "07/29/2024"
+        },
+        {
+            "imgPath": "img/myImages/2-IMG_3558.jpg",
+            "imgLocation": "Freehold, New Jersey",
+            "description": "Young Lads Playing Football",
+            "date": "06/21/2024"
+        },
+        {
+            "imgPath": "img/myImages/3-IMG_2674.jpg",
+            "imgLocation": "Barneget, New Jersey",
+            "description": "Cam Newton at C1N NJ",
+            "date": "01/03/2016"
+        },
+        {
+            "imgPath": "img/myImages/4-IMG_0141.jpg",
+            "imgLocation": "Freehold, New Jersey",
+            "description": "Freehold Boro's Catcher Tyler Kunken",
+            "date": "04/17/2024"
+        },
+        {
+            "imgPath": "img/myImages/5-IMG_6960.jpg",
+            "imgLocation": "Freehold, New Jersey",
+            "description": "Freehold Boro's QB preparing for Rivalry Game",
+            "date": "10/4/2023"
+        },
+        {
+            "imgPath": "img/myImages/9-IMG_8884.jpg",
+            "imgLocation": "Hazlet, New Jersey",
+            "description": "Freehold Boro's Damier Lester Pregame",
+            "date": "09/12/2025"
+        },
+        {
+            "imgPath": "img/myImages/10-IMG_4338.jpg",
+            "imgLocation": "Freehold, New Jersey",
+            "description": "Freehold Boro's Record Holder Tyler Passmore Training",
+            "date": "07/19/2025"
+        },
+        {
+            "imgPath": "img/myImages/13-IMG_3125.jpg",
+            "imgLocation": "Freehold, New Jersey",
+            "description": "Matthew DiGiso Preparing for VAWFF Annual Boxing Event",
+            "date": "5/14/2025"
+        },
+        {
+            "imgPath": "img/myImages/14-IMG_2941.jpg",
+            "imgLocation": "Tinton Falls, New Jersey",
+            "description": "Tyler Passmore Relaxes After Winning 3 Medals at First Meet of the Season",
+            "date": "05/12/2025"
+        },
+        {
+            "imgPath": "img/myImages/15-IMG_3861.jpg",
+            "imgLocation": "Freehold, New Jersey",
+            "description": "Xander Bartuck Enters a Flow State During Warmups for His Match",
+            "date": "01/26/2025"
+        }   
+  ]
+}
