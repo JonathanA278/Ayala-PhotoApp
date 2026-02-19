@@ -4,16 +4,25 @@ const mUrl = 'myImages.json' // done
 const mWaitTime = 5000 // unchanged
 
 $(document).ready(function() {
-  $.getJSON(mUrl, function(data) {
-    myImages = data;
 
-    showPrevPhoto(currentIndex);
-  })
 })
 
-$(document).ready(() => {
-  $('.details').hide() // Hide details initially
+$(document).ready(function()  {
+  $('.details').hide() 
 
+  $("#moreIndicator").click(function () {
+    $("#metadata").slideToggle();
+    $(this).toggleClass("rotate");
+  })
+
+function showPhoto(index) {
+  let photo = myImages[index];
+
+  $("galleryImage").attr("src", photo.imgPath);
+  $("description").text(photo.description);
+  $("location").text(photo.location);
+  $("#date").text(photo.date);
+}
   // Call a function here to start the timer for the slideshow
 
   // Select the moreIndicator button and add a click event to:
@@ -28,8 +37,18 @@ $(document).ready(() => {
   fetchJSON()
 })
 
+
+
 // Function to fetch JSON data and store it in mImages
 function fetchJSON () {
+  
+      $.getJSON(mUrl, function(data) {
+    myImages = data;
+
+    showPhoto(currentIndex);
+
+    startTimer();
+  });
   // Use $.getJSON here to request the JSON data from mUrl
   // On success, parse the JSON and push each image object into mImages array
   // After JSON is loaded, call swapPhoto() to display the first image
@@ -44,19 +63,26 @@ function swapPhoto () {
 
 // Advances to the next photo, loops to the first photo if the end of array is reached
 function showNextPhoto () {
-  // Increment mCurrentIndex and call swapPhoto()
-  // Ensure it loops back to the beginning if mCurrentIndex exceeds array length
+  currentIndex++;
+
+  if (currentIndex >= myImages.length) {
+    currentIndex = 0;
+  }
+  showPhoto(currentIndex);
 }
 
 // Goes to the previous photo, loops to the last photo if mCurrentIndex goes negative
 function showPrevPhoto () {
-  // Decrement mCurrentIndex and call swapPhoto()
-  // Ensure it loops to the end if mCurrentIndex is less than 0
+       currentIndex--;
+
+     if(currentIndex< 0) {
+      currentIndex = myImages.length - 1;
+     }
+
+     showPhoto(currentIndex)
 }
 
 // Starter code for the timer function
 function startTimer () {
-  // Create a timer to automatically call `showNextPhoto()` every mWaitTime milliseconds
-  // Consider using setInterval to achieve this functionality
-  // Hint: Make sure only one timer runs at a time
+  slideTimer = setInterval(showNextPhoto, 5000)
 }
