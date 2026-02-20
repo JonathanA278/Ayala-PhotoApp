@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IS219 Slideshow</title>
 
-    <!-- Bootstrap 5 CSS  hi-->
+    <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
@@ -15,8 +15,6 @@
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
-
-    
 </head>
 
 <body>
@@ -27,14 +25,17 @@
 
                 <!-- Photo Holder Section -->
                 <div class="col-12 col-md-8 photoHolder mb-3">
+                    <!-- Image src will be set dynamically via JS -->
                     <img class="thumbnail img-fluid" id="photo"
-                        src="img/places/thailand.jpg" alt="Gallery Image" />
+                        src="img/myImages/1-IMG_0948.jpg" alt="Gallery Image" />
                 </div>
 
-                <!-- More Indicator and Navigation Controls -->
+                <!-- More Indicator -->
                 <div class="col-12 text-center my-2">
                     <img class="moreIndicator rot90 img-fluid" src="img/more.png" alt="More Content" />
                 </div>
+
+                <!-- Navigation Buttons -->
                 <div id="nav" class="col-12 d-flex justify-content-between">
                     <img id="prevPhoto" class="rot180 img-fluid" src="img/arrow.png" alt="Previous Photo" />
                     <img id="nextPhoto" class="img-fluid" src="img/arrow.png" alt="Next Photo" />
@@ -52,6 +53,7 @@
 
     <!-- Bootstrap 5 JavaScript (optional) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
     <!-- Custom JS -->
     <script src="gallery.js"></script>
 </body>
