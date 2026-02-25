@@ -13,7 +13,7 @@ body {
     max-width: 500px;
     width: 90%;
     margin: auto;
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(255, 123, 123, 0.9);
     border-radius: 8px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
@@ -36,7 +36,7 @@ body {
 .banner {
     font-size: 2rem;
     font-weight: bold;
-    color: #333;
+    color: #a70000;
 }
 
 /* 'More Content' icon */
@@ -57,7 +57,7 @@ body {
 
 /* Metadata details */
 .details {
-    border: 1px dashed #000;
+    border: 1px dashed #ff8787;
     padding: 15px;
     background-color: #f8f9fa;
     border-radius: 4px;
